@@ -1,4 +1,5 @@
 import { Globe, Users, Trophy } from "lucide-react";
+import "./Services.css"
 
 const achievements = [
   { 
@@ -31,7 +32,7 @@ const Achievements = () => {
           {achievements.map((achievement, index) => (
             <div
               key={index}
-              className="bg-white p-8 rounded-xl shadow-md text-center 
+              className="block bg-white p-8 rounded-xl shadow-md text-center 
               hover:shadow-xl transition-all duration-500 transform hover:scale-105 hover:rotate-3 group"
             >
               <div 

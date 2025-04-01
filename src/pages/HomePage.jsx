@@ -13,6 +13,7 @@ import ContactForm from '../components/ContactForm';
 
 import Mission from '../components/Mission';
 import Navbar from '../components/Navbar';
+import Marquee from '../components/Marquee';
 const HomePage = () => {
 
 
@@ -22,6 +23,7 @@ const HomePage = () => {
       <Navbar/>
       <Hero/>
       <Services/>
+      <Marquee/>
       <Mission/>
       <TeamSection/>
       <Achievements/>

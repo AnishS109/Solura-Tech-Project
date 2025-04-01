@@ -1,15 +1,26 @@
-
 import { Globe } from 'lucide-react';
 import './Mission.css';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Mission = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
-    <section className="bg-gra-200 py-30 overflow-hidden">
+    <section className="bg-gray-200 py-16 sm:py-20 md:py-30 overflow-hidden">
       <div className="container mx-auto px-4">
 
         <div className="flex flex-col md:flex-row items-center">
-          <div className="md:w-3/5 p-6 md:pr-16 mission-text">
-          <h2 className="text-4xl font-extrabold text-center text-black mb-12">Our <span className="text-gray-500">Mission</span></h2>
+          <div 
+            className="md:w-3/5 p-6 md:pr-16 mission-text text-black"
+            data-aos="fade-in"
+            data-aos-duration="1000"
+            data-aos-offset="200"
+          >
+            <h2 className="text-4xl font-extrabold text-center text-black mb-12">Our <span className="text-gray-500">Mission</span></h2>
         
             <h3 className="text-3xl font-semibold mb-6 text-black">Global Impact</h3>
             <p className="text-gray-700 text-lg mb-6 leading-relaxed">
@@ -39,7 +50,13 @@ const Mission = () => {
               </ul>
             </div>
           </div>
-          <div className="md:w-2/5 flex justify-center p-6">
+
+          <div 
+            className="md:w-2/5 flex justify-center p-6"
+            data-aos="fade-in"
+            data-aos-duration="1200"
+            data-aos-offset="200"
+          >
             <div className="icon-container">
               <Globe className="text-black globe-icon" size={120} />
             </div>

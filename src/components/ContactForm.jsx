@@ -1,4 +1,4 @@
-import  { useState } from 'react';
+import { useState } from 'react';
 import { Send, AlertCircle, CheckCircle } from 'lucide-react';
 
 const ContactForm = () => {
@@ -74,17 +74,17 @@ const ContactForm = () => {
   const employeeOptions = ['1-10', '11-50', '51-200', '201-500', '500+'];
 
   return (
-    <section className="bg-gray-100 py-20">
+    <section className="py-20 bg-gray-100 text-white">
       <div className="container mx-auto px-4 max-w-2xl">
         <h2 className="text-4xl font-extrabold text-center text-black mb-16">
-          Get in <span className="text-gray-500"> Touch</span>
+          Get in <span className="text-gray-400">Touch</span>
         </h2>
 
-        <form onSubmit={handleSubmit} className="bg-white p-8 rounded-xl shadow-2xl">
-          {/* Name Input */}
+        <form onSubmit={handleSubmit} className="bg-white p-8 rounded-xl shadow-xl text-black">
+          {/* Name, Email, Phone, Company Inputs */}
           {['name', 'email', 'phone', 'company'].map((field) => (
             <div key={field} className="mb-6">
-              <label htmlFor={field} className="block mb-2 text-sm font-medium text-black">
+              <label htmlFor={field} className="text-sm font-medium mb-2 inline-block">
                 {field.charAt(0).toUpperCase() + field.slice(1)}
               </label>
               <input
@@ -92,9 +92,7 @@ const ContactForm = () => {
                 id={field}
                 value={formData[field]}
                 onChange={handleChange}
-                className={`w-full px-4 py-3 border rounded-lg focus:outline-none transition-all duration-300 ${
-                  errors[field] ? 'border-red-500 focus:ring-red-300' : 'border-gray-300 focus:ring-blue-300'
-                }`}
+                className={`w-full px-4 py-3 rounded-lg border transition-all duration-300 focus:outline-none ${errors[field] ? 'border-red-500 focus:ring-red-300' : 'border-gray-300 focus:ring-blue-500'}`}
               />
               {errors[field] && (
                 <p className="text-red-500 text-sm mt-1 flex items-center">
@@ -106,16 +104,14 @@ const ContactForm = () => {
 
           {/* Employees Dropdown */}
           <div className="mb-6">
-            <label htmlFor="employees" className="block mb-2 text-sm font-medium text-black">
+            <label htmlFor="employees" className="text-sm font-medium mb-2 inline-block">
               Number of Employees
             </label>
             <select
               id="employees"
               value={formData.employees}
               onChange={handleChange}
-              className={`w-full px-4 py-3 border rounded-lg focus:outline-none transition-all duration-300 ${
-                errors.employees ? 'border-red-500 focus:ring-red-300' : 'border-gray-300 focus:ring-blue-300'
-              }`}
+              className={`w-full px-4 py-3 rounded-lg border transition-all duration-300 focus:outline-none ${errors.employees ? 'border-red-500 focus:ring-red-300' : 'border-gray-300 focus:ring-blue-500'}`}
             >
               <option value="">Select</option>
               {employeeOptions.map((option) => (
@@ -133,7 +129,7 @@ const ContactForm = () => {
 
           {/* Message Input */}
           <div className="mb-6">
-            <label htmlFor="message" className="block mb-2 text-sm font-medium text-black">
+            <label htmlFor="message" className="text-sm font-medium mb-2 inline-block">
               Message
             </label>
             <textarea
@@ -141,9 +137,7 @@ const ContactForm = () => {
               rows="4"
               value={formData.message}
               onChange={handleChange}
-              className={`w-full px-4 py-3 border rounded-lg focus:outline-none transition-all duration-300 ${
-                errors.message ? 'border-red-500 focus:ring-red-300' : 'border-gray-300 focus:ring-blue-300'
-              }`}
+              className={`w-full px-4 py-3 rounded-lg border transition-all duration-300 focus:outline-none ${errors.message ? 'border-red-500 focus:ring-red-300' : 'border-gray-300 focus:ring-blue-500'}`}
               placeholder="Tell us about your project..."
             ></textarea>
             {errors.message && (
@@ -157,9 +151,7 @@ const ContactForm = () => {
           <button
             type="submit"
             disabled={submitStatus === 'success'}
-            className={`w-full py-3 rounded-lg transition duration-300 ${
-              submitStatus === 'success' ? 'bg-green-500 text-white cursor-not-allowed' : 'bg-black text-white '
-            }`}
+            className={`w-full py-3 rounded-lg transition-all duration-300 ${submitStatus === 'success' ? 'bg-green-500 text-white cursor-not-allowed' : 'bg-black text-white hover:bg-gray-900'}`}
           >
             {submitStatus === 'success' ? (
               <>
