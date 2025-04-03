@@ -43,23 +43,28 @@ const Services = () => {
   const [hoveredService, setHoveredService] = useState(null);
 
   return (
-    <section className="bg-white py-30 px-6 mx-auto ">
+    <section className="bg-white py-30 px-6 mx-auto flex flex-col items-center justify-center">
+
+      <div>
       <h2 className="text-4xl font-extrabold text-center text-black mb-16">
         Our <span className="text-gray-500">Services</span>
       </h2>
+      </div>
 
       {/* View container for the service cards */}
-      <div className="view">
+      <div className="view flex justify-center">
         {services.map((service, index) => (
           <div
-            key={index}
-            onMouseEnter={() => setHoveredService(index)}
-            onMouseLeave={() => setHoveredService(null)}
-            className={`block bg-white bg-opacity-20 backdrop-blur-lg p-6 rounded-xl shadow-xl transition-all duration-500 ease-in-out transform hover:-translate-y-4
-            ${hoveredService === index
-              ? `border-2 border-sky-400 scale-105 shadow-lg shadow-blue-300/50`
-              : "border-2 border-transparent shadow-md shadow-blue-200/40"}`}
-          >
+  key={index}
+  onMouseEnter={() => setHoveredService(index)}
+  onMouseLeave={() => setHoveredService(null)}
+  className={`block bg-white bg-opacity-20 backdrop-blur-lg p-6 rounded-xl shadow-xl transition-all duration-500 ease-[cubic-bezier(0.25, 1, 0.5, 1)] transform 
+    ${hoveredService === index
+      ? "border-2 border-sky-400 scale-105 shadow-lg shadow-blue-300/50"
+      : "border-2 border-transparent shadow-md shadow-blue-200/40"}`}
+  style={{ willChange: "transform, box-shadow, border" }}
+>
+
             <div
               className={`flex justify-center mb-4 transform transition-transform duration-500 ${hoveredService === index ? "rotate-12 scale-110" : ""}`}
             >

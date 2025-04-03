@@ -10,6 +10,14 @@
   }
 }
 
+.view {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-items: center;
+}
+
 /* Custom block styles */
 .block {
   height: fit-content;
@@ -18,12 +26,29 @@
   animation: appear 1s linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
+  
+  /* Initial scaling */
+  transform: scale(0.8);
+  transition: transform 0.3s ease-out;
 }
 
-/* Flex container class to hold blocks */
-.view {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+/* Scaling effect based on scroll */
+.block::view-transition {
+  view-timeline-name: scaleEffect;
 }
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.block {
+  animation: scaleUp linear;
+  animation-timeline: view();
+  animation-range: entry 10% cover 100%;
+}
+
