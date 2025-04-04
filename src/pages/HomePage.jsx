@@ -14,6 +14,7 @@ import ContactForm from '../components/ContactForm';
 import Mission from '../components/Mission';
 import Navbar from '../components/Navbar';
 import Marquee from '../components/Marquee';
+import Warning from '../components/Warning';
 const HomePage = () => {
 
 
@@ -21,6 +22,7 @@ const HomePage = () => {
     <div className="bg-gray-50">
   
       <Navbar/>
+      <Warning/>
       <Hero/>
       <Services/>
       <Marquee/>

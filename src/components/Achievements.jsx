@@ -28,7 +28,7 @@ const Achievements = () => {
         </h2>
        
         
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="flex justify-center flex-wrap">
           {achievements.map((achievement, index) => (
             <div
               key={index}
