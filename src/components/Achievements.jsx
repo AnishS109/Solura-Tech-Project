@@ -49,6 +49,13 @@ const Achievements = () => {
             </div>
           ))}
         </div>
+        <div className="mt-14">
+          <p className="text-gray-700 text-lg sm:text-xl leading-relaxed">
+          Solura Technologies proudly serves clients across North America, Europe, Asia, and the Middle East. Our global network of consultants and development teams enables us to provide around-the-clock services, rapid scaling, and local market understanding.
+From helping startups build their MVPs to supporting Fortune 500 enterprises with enterprise-grade solutions, our impact spans industries including fintech, healthcare, retail, and more. Through our global footprint and client-centric approach, we continue to empower businesses everywhere to achieve their digital potential.
+          </p>
+        </div>
+
       </div>
     </section>
   );

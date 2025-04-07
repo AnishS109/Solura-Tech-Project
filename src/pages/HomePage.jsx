@@ -15,6 +15,7 @@ import Mission from '../components/Mission';
 import Navbar from '../components/Navbar';
 import Marquee from '../components/Marquee';
 import Warning from '../components/Warning';
+import Vision from '../components/Vision';
 const HomePage = () => {
 
 
@@ -22,10 +23,11 @@ const HomePage = () => {
     <div className="bg-gray-50">
   
       <Navbar/>
-      <Warning/>
+      {/* <Warning/> */}
       <Hero/>
       <Services/>
       <Marquee/>
+      <Vision/>
       <Mission/>
       <TeamSection/>
       <Achievements/>

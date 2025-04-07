@@ -1,24 +1,41 @@
 import  { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, Quote } from 'lucide-react';
+import approach from "../assests/appro.webp"
+import industry from "../assests/industry.jpeg"
+import mind from "../assests/mind.jpeg"
+import partner from "../assests/partner.png"
+import rapid from "../assests/rapid.png"
 
 const testimonials = [
   {
-    name: "John Doe",
-    role: "CTO, Tech Innovations",
-    review: "Exceptional service and professional approach that exceeded our expectations.",
-    image: "/api/placeholder/100/100"
+    name: "Tailored Approach    ",
+    role: "",
+    review: "We align our services with your goals, whether you need a dedicated developer, a full team, or an end-to-end solution.    ",
+    image: [approach]
   },
   {
-    name: "Jane Smith",
-    role: "CEO, Global Enterprises",
-    review: "Transformed our digital strategy with cutting-edge solutions that revolutionized our business.",
-    image: "/api/placeholder/100/100"
+    name: "Quality-First Mindset    ",
+    role: "",
+    review: "Every project we undertake is driven by high standards of performance, security, and scalability.",
+    image: mind
   },
   {
-    name: "Michael Chen",
-    role: "Founder, Startup Accelerator",
-    review: "A game-changing partnership that delivered results beyond our wildest dreams.",
-    image: "/api/placeholder/100/100"
+    name: "Rapid Scaling    ",
+    role: "",
+    review: "We help you scale your tech team or solution quickly without compromising quality or timelines.",
+    image: rapid
+  },
+  {
+    name: "Industry Expertise    ",
+    role: "",
+    review: "With experience across fintech, healthcare, retail, logistics, and more, we bring domain understanding to every project.",
+    image: industry
+  },
+  {
+    name: "Transparent Partnership    ",
+    role: "",
+    review: "We believe in honest communication, on-time delivery, and long-term collaboration over short-term gain.",
+    image: partner
   }
 ];
 
@@ -54,7 +71,7 @@ const Testimonials = () => {
     <section className="bg-white py-20">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-extrabold text-center text-black mb-16 tracking-tight">
-          Client <span className="text-gray-500">Testimonials</span>
+        Why    <span className="text-gray-500">Choose Us</span>
         </h2>
         
         <div className="relative max-w-3xl mx-auto">

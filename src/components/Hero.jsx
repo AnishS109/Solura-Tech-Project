@@ -24,11 +24,14 @@ const Hero = () => {
             "text-4xl md:text-6xl font-bold mb-6 text-white transition-transform",
           )}
         >
-          Innovate. Transform. Succeed.
+          Solura Technologies 
+
         </h1>
 
         <p className="text-xl text-neutral-300 mb-8 max-w-2xl mx-auto animate-pulse">
-          Empowering businesses through advanced technology and strategic innovation
+        – Bridging Talent with Technology
+Delivering exceptional IT consultants and intelligent software solutions to help businesses innovate, scale, and succeed globally.
+
         </p>
 
         <div

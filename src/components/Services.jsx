@@ -1,19 +1,41 @@
 import { useState } from "react";
-import { Code, Database, Server, CheckCircle } from "lucide-react"; // Ya kisi aur icon library se
+import { Code, Database, Server, CheckCircle, ArchiveRestore, Cloud, ShieldCheck, Cuboid  } from "lucide-react"; // Ya kisi aur icon library se
 import "./Services.css"
 
 
 const services = [
   { 
     icon: <Code className="w-12 h-12 text-blue-600" />, 
-    title: "Software Development", 
-    description: "Cutting-edge software solutions tailored to your business needs.",
+    title: "IT Staffing Solutions", 
+    description: "Connect with skilled developers and IT experts tailored to your business needs.",
     features: [
-      "Custom Application Development",
-      "Full-Stack Engineering",
-      "Cloud-Native Solutions"
+      "Contract-Based Staffing",
+      "Dedicated Development Teams",
+      "Remote IT Talent"
     ],
     color: "blue"
+  },
+  { 
+    icon: <ArchiveRestore className="w-12 h-12 text-green-600" />, 
+    title: "Custom Software Development", 
+    description: "Build reliable, scalable, and secure software tailored to your operations.",
+    features: [
+      "Web & Mobile Application Development",
+      "Enterprise Solutions",
+      "API & System Integration      "
+    ],
+    color: "green"
+  },
+  { 
+    icon: <Server className="w-12 h-12 text-purple-600" />, 
+    title: "SaaS Product Development", 
+    description: "Develop and launch cloud-based software products for recurring value.",
+    features: [
+      "Multi-Tenant SaaS Platforms",
+      "Subscription & User Management",
+      "Scalable Product Architecture"
+    ],
+    color: "purple"
   },
   { 
     icon: <Database className="w-12 h-12 text-green-600" />, 
@@ -24,16 +46,38 @@ const services = [
       "Business Intelligence",
       "Data Visualization"
     ],
-    color: "green"
+    color: "purple"
   },
   { 
-    icon: <Server className="w-12 h-12 text-purple-600" />, 
-    title: "Cloud Services", 
-    description: "Scalable and secure cloud infrastructure solutions.",
+    icon: <Cloud  className="w-12 h-12 text-blue-600" />, 
+    title: "Cloud Solutions    ", 
+    description: "Enable agility and scalability through modern cloud infrastructure.",
     features: [
-      "Migration Strategies",
-      "Hybrid Cloud Management",
-      "Security Optimization"
+      "Cloud Migration      ",
+      "DevOps & Automation      ",
+      "Managed Cloud Services"
+    ],
+    color: "purple"
+  },
+  { 
+    icon: <ShieldCheck  className="w-12 h-12 text-green-600" />, 
+    title: "Quality Assurance & Testing", 
+    description: "Ensure the functionality, security, and performance of your software.    ",
+    features: [
+      "Manual & Automated Testing      ",
+      "Performance Testing      ",
+      "Security & Compliance      "
+    ],
+    color: "purple"
+  },
+  { 
+    icon: <Cuboid   className="w-12 h-12 text-purple-600" />, 
+    title: "UI/UX Design Services    ", 
+    description: "Deliver intuitive and engaging digital experiences.    ",
+    features: [
+      "Wireframing & Prototyping      ",
+      "User-Centered Design      ",
+      "Responsive Interface Design      "
     ],
     color: "purple"
   }
