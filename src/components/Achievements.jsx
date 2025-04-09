@@ -4,18 +4,13 @@ import "./Services.css"
 const achievements = [
   { 
     icon: <Globe className="w-16 h-16 text-blue-500" />, 
-    number: "50+", 
+    number: "5+", 
     title: "Global Clients" 
   },
   { 
     icon: <Users className="w-16 h-16 text-green-500" />, 
-    number: "500+", 
+    number: "25+", 
     title: "Team Members" 
-  },
-  { 
-    icon: <Trophy className="w-16 h-16 text-yellow-500" />, 
-    number: "25", 
-    title: "Industry Awards" 
   }
 ];
 
@@ -51,8 +46,7 @@ const Achievements = () => {
         </div>
         <div className="mt-14">
           <p className="text-gray-700 text-lg sm:text-xl leading-relaxed">
-          Solura Technologies proudly serves clients across North America, Europe, Asia, and the Middle East. Our global network of consultants and development teams enables us to provide around-the-clock services, rapid scaling, and local market understanding.
-From helping startups build their MVPs to supporting Fortune 500 enterprises with enterprise-grade solutions, our impact spans industries including fintech, healthcare, retail, and more. Through our global footprint and client-centric approach, we continue to empower businesses everywhere to achieve their digital potential.
+          Solura Technologies is a growing startup delivering exceptional results to clients across North America, Europe, Asia, and the Middle East. With 5+ global clients and a dedicated team of 25+ skilled professionals, we bring agility, innovation, and deep technical expertise to every project. Our global presence allows us to offer 24/7 support, rapid team scaling, and a strong understanding of diverse market needs. Whether it's building MVPs for startups or delivering scalable solutions for large enterprises, we proudly serve industries such as fintech, healthcare, and retail. At Solura Technologies, we are committed to empowering businesses to unlock their full digital potential.
           </p>
         </div>
 

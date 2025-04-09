@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="bg-black text-white py-12 animate-footer-enter">
       <div className="container mx-auto px-4 grid md:grid-cols-3 gap-8">
         <div className="animate-slide-in-left">
-          <h3 className="text-xl font-bold mb-4 animate-fade-in">Cognizant</h3>
+          <h3 className="text-xl font-bold mb-4 animate-fade-in">Solura Technologies</h3>
           <p className="text-blue-200 animate-fade-in delay-100">
             Driving digital transformation and technology innovation for global businesses.
           </p>
@@ -38,10 +38,7 @@ const Footer = () => {
           <h4 className="text-lg font-semibold mb-4 animate-fade-in">Connect With Us</h4>
           <div className="flex space-x-4 animate-social-icons">
             {[
-              { Icon: Facebook, link: 'https://facebook.com/cognizant' },
-              { Icon: Twitter, link: 'https://twitter.com/cognizant' },
-              { Icon: Linkedin, link: 'https://linkedin.com/company/cognizant' },
-              { Icon: Instagram, link: 'https://instagram.com/cognizant' }
+              { Icon: Linkedin, link: 'https://linkedin.com/company/cognizant' }
             ].map(({ Icon, link }, index) => (
               <a 
                 key={link}
@@ -55,7 +52,7 @@ const Footer = () => {
             ))}
           </div>
           <div className="mt-4 text-blue-200 flex items-center justify-between animate-fade-in delay-500">
-            <p>© 2025 Cognizant. All Rights Reserved.</p>
+            <p>© 2025 Solura Technologies. All Rights Reserved.</p>
             <a 
               href="/privacy-policy" 
               className="text-sm hover:text-blue-300 transition-colors duration-300 group"
