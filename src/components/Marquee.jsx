@@ -2,8 +2,30 @@ import React from "react";
 import "../index.css"
 
 
-const servicesTop = ["Service1", "Service2", "Service3", "Service4", "Service5"];
-const servicesBottom = ["Service6", "Service7", "Service8", "Service9", "Service10"];
+const servicesTop = [
+  "Web Development",
+  "Mobile App Development",
+  "Cloud Computing",
+  "Cybersecurity",
+  "IT Consulting",
+  "Software Testing",
+  "UI/UX Design",
+  "Database Management",
+  "System Integration",
+  "Technical Support"
+];
+const servicesBottom = [
+  "Banking",
+  "Insurance",
+  "Wealth Management",
+  "Stock Brokerage",
+  "Mutual Funds",
+  "Credit Card Services",
+  "Tax Consulting",
+  "Accounting Services",
+  "Loan Services",
+  "Investment Advisory"
+];
 
 const Marquee = () => {
   return (
