@@ -1,40 +1,116 @@
-import React from "react";
-import "../index.css"
-
+import React from 'react';
+import '../index.css';
 
 const servicesTop = [
-  "Web Development",
-  "Mobile App Development",
-  "Cloud Computing",
-  "Cybersecurity",
-  "IT Consulting",
-  "Software Testing",
-  "UI/UX Design",
-  "Database Management",
-  "System Integration",
-  "Technical Support"
+  'Web Development',
+  'Mobile App Development',
+  'Cloud Computing',
+  'Cybersecurity',
+  'IT Consulting',
+  'Software Testing',
+  'UI/UX Design',
+  'Database Management',
+  'System Integration',
+  'Technical Support',
 ];
 const servicesBottom = [
-  "Banking",
-  "Insurance",
-  "Wealth Management",
-  "Stock Brokerage",
-  "Mutual Funds",
-  "Credit Card Services",
-  "Tax Consulting",
-  "Accounting Services",
-  "Loan Services",
-  "Investment Advisory"
-];
+  'Banking',
+  'Insurance',
+  'Wealth Management',
+  'Stock Brokerage',
+  'Mutual Funds',
+  'Credit Card Services',
+  'Tax Consulting',
+  'Accounting Services',
+  'Loan Services',
+  'Investment Advisory',
+]
 
 const Marquee = () => {
   return (
-    <div className="relative w-full bg-white overflow-hidden py-6">
+    <div className='relative w-full bg-white overflow-hidden py-6'>
       {/* Upper Marquee (Right to Left) */}
-      <div className="marquee">
-        <div className="marquee-content animate-marquee-left">
-          {[...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop, ...servicesTop].map((service, index) => (
-            <span key={index} className="marquee-item md:mx-6 mx-1">
+      <div className='marquee'>
+        <div className='marquee-content animate-marquee-left'>
+          {[
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+            ...servicesTop,
+          ].map((service, index) => (
+            <span key={index} className='marquee-item md:mx-6 mx-1'>
               {service}
             </span>
           ))}
@@ -42,10 +118,76 @@ const Marquee = () => {
       </div>
 
       {/* Lower Marquee (Left to Right) */}
-      <div className="marquee mt-6 mb-28">
-        <div className="marquee-content animate-marquee-right">
-          {[...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom, ...servicesBottom].map((service, index) => (
-            <span key={index} className="marquee-item md:mx-6 mx-1">
+      <div className='marquee mt-6 mb-28'>
+        <div className='marquee-content animate-marquee-right'>
+          {[
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+            ...servicesBottom,
+          ].map((service, index) => (
+            <span key={index} className='marquee-item md:mx-6 mx-1'>
               {service}
             </span>
           ))}
@@ -56,8 +198,3 @@ const Marquee = () => {
 };
 
 export default Marquee;
-
-
-
-
-
