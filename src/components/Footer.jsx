@@ -37,7 +37,7 @@ const Footer = () => {
         <div className="animate-slide-in-right">
           <h4 className="text-lg font-semibold mb-4 animate-fade-in">Connect With Us</h4>
           <div className="flex space-x-4 animate-social-icons">
-            {[
+            {/* {[
               { Icon: Linkedin, link: 'https://linkedin.com/company/cognizant' }
             ].map(({ Icon, link }, index) => (
               <a 
@@ -49,7 +49,7 @@ const Footer = () => {
               >
                 <Icon className="w-6 h-6" />
               </a>
-            ))}
+            ))} */}
           </div>
           <div className="mt-4 text-blue-200 flex items-center justify-between animate-fade-in delay-500">
             <p>© 2025 Solura Technologies. All Rights Reserved.</p>
